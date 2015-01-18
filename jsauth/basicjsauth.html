@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<title>
+		Front End Auth
+		</title>
+	<script type="text/javascript">
+	function auth() {
+		if (document.getElementById("user").value=="kragon3") {
+			if (document.getElementById("passwd").value=="Password123") {
+			alert("Congrats. You figured out my master password you sly dog.")
+			document.getElementById("solved").innerHTML="<img src='http://www.netanimations.net/Moving-animated-picture-of-monkey-giving-thumbs-up-sign.gif' /><br><br>So from this what you're learning is to not use any client-side authentication methods, like (assuming no frameworks like node.js) Javascript. Also to view source, not store passwords in clear text, etc."
+		} else {
+		alert("Lol no u r bad")
+		}
+	}
+	}
+	</script>
+	</head>
+	
+	<body>
+	<form>
+	<b>Enter Username and Password Pl0x 4 Accezz to Super Hax0r Sekret Chatroom</b><br><br>All of our komminikatiz nd passwerdz iz sekure!<br><br>
+	
+	<input type="text" id="user">
+	<input type="password" id="passwd"><br><br>
+	<input type="button" value="Use hax0ring formulae to authintik8" onclick="javascript:auth()"><br><br><a href="javascript:alert('right click + view source')">Hint?</a>
+	<br><br>
+	<span id="solved"></span>
+	</form>
+	</body>
+</html>
